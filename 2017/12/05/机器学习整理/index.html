@@ -88,19 +88,20 @@
 
 
 
-<meta name="description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。">
+<meta name="description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将通过用一个小故事形象地说明什么是机器学习。 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉">
 <meta name="keywords" content="机器学习,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习整理">
 <meta property="og:url" content="http://yuzt1224.name/2017/12/05/机器学习整理/index.html">
 <meta property="og:site_name" content="Oltremare">
-<meta property="og:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。">
+<meta property="og:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将通过用一个小故事形象地说明什么是机器学习。 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他， 亮黄色 的芒果比 淡黄色 的甜。于是他就按照外婆传授的经验买回一袋芒果">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yuzt1224.name/images/SVM.png">
-<meta property="og:updated_time" content="2017-12-05T08:23:27.156Z">
+<meta property="og:image" content="http://yuzt1224.name/images/mango.png">
+<meta property="og:updated_time" content="2017-12-05T16:30:16.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习整理">
-<meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。">
+<meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将通过用一个小故事形象地说明什么是机器学习。 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他， 亮黄色 的芒果比 淡黄色 的甜。于是他就按照外婆传授的经验买回一袋芒果">
 <meta name="twitter:image" content="http://yuzt1224.name/images/SVM.png">
 
 
@@ -327,6 +328,20 @@
 <hr>
 <h2 id="关于本文"><a href="#关于本文" class="headerlink" title="关于本文"></a>关于本文</h2><p>这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。</p>
 <hr>
+<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><h3 id="说明机器学习的小故事"><a href="#说明机器学习的小故事" class="headerlink" title="说明机器学习的小故事"></a>说明机器学习的小故事</h3><p>下面将通过用一个小故事形象地说明什么是机器学习。</p>
+<p>有一天喻资通到水果摊买<em>芒果</em>。当然喻资通买<em>芒果</em>是用手选的，而且<em>芒果</em>小贩是按斤卖<em>芒果</em>的。因为他喜欢吃甜的，所以决定选 <strong>甜</strong> 的。</p>
+<p>外婆告诉他， <strong>亮黄色</strong> 的<em>芒果</em>比 <strong>淡黄色</strong> 的甜。于是他就按照外婆传授的经验买回一袋<em>芒果</em>来，尝了之后发现只有一部分<em>芒果</em>甜。细心的他发现，又 <strong>大</strong> 又 <strong>亮黄</strong> 的<em>芒果</em>甜的概率是又 <strong>小</strong> 又 <strong>亮黄</strong> 概率的两倍。于是他决定下次用这个经验买<em>芒果</em>。</p>
+<p>过了好几天他终于把上次买的<em>芒果</em>吃完了，决定再去买一趟，但是去了才知道水果摊换了。由于<em>芒果</em>产地不同，之前经验变得不可靠了。经过许多尝试他发现，又 <strong>小</strong> 又 <strong>淡黄</strong> 的<em>芒果</em>在现在这个水果摊中其实更甜。于是喻资通决定以后用这个经验买<em>芒果</em>。</p>
+<p>过了几个月，隔壁老王来家里做客，喻资通决定招待他吃<em>芒果</em>。可是隔壁老王这个人很有问题，他只关心<em>芒果</em>的汁水是否多。为了讨好老王，喻资通经过挑选、试吃发现， <strong>软</strong> 的<em>芒果</em>汁水多。老王很满意。</p>
+<p>后来喻资通搬家到远方，发现这里的 <strong>绿</strong> <em>芒果</em>实际上是最甜的。</p>
+<p>再后来，喻资通的女朋友不喜欢<em>芒果</em>，她喜欢<em>苹果</em>。之前买<em>芒果</em>的经验都没用了。喻资通决定重新学习<em>苹果</em>的外表物理特征和<em>苹果</em>口感之间的联系，因为他爱她。</p>
+<p><strong>依据数据所做的判断跟机器学习的思想根本上是一致的。</strong></p>
+<img src="/images/mango.png" title="作者也不知道这是什么水果 就当作芒果吧">
+<p>但是每次从实验中进行新的观察时（挑选、试吃<em>芒果</em>），都必须手动修改规则列表。你必须了解影响<em>芒果</em>品质所有因素的错综复杂的细节。如果这个问题变得足够复杂，那么人工确定所有芒果好坏的精确规则就很困难了。你的研究可以让你获得芒果科学博士学位（如果有的话）。但不是每个人都有这样的时间。</p>
+<p>幸好喻资通是学计算机的。他决定用代码来说建立选芒果的模型。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ( color is bright yellow <span class="keyword">and</span> size is big ): mango is sweet.</span><br><span class="line"><span class="keyword">if</span> ( feel is soft): mango is juicy.</span><br><span class="line">etc.</span><br></pre></td></tr></table></figure><br>把这些建立模型的过程交给电脑，比如把所有的自变量和因变量输入，然后让计算机帮喻资通生成一个模型，同时让计算机根据当前遇到的芒果特征，给出芒果是否符合要求的建议。那么计算机执行这些辅助决策的过程就是机器学习的过程。</p>
+<p><strong>机器学习方法是计算机利用已有的数据(经验)，得出了某种模型(芒果好不好的规律)，并利用此模型预测未来(芒果是否好)的一种方法。</strong></p>
+<p>下面将会对机器学习的正式介绍，包括定义、范围，方法、应用等等。</p>
+<h3 id="机器学习的定义"><a href="#机器学习的定义" class="headerlink" title="机器学习的定义"></a>机器学习的定义</h3><p>To be continued…</p>
 
       
     </div>
@@ -525,7 +540,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">2.</span> <span class="nav-text">什么是机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明机器学习的小故事"><span class="nav-number">2.1.</span> <span class="nav-text">说明机器学习的小故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.2.</span> <span class="nav-text">机器学习的定义</span></a></li></ol></li></ol></div>
             
 
           </div>
