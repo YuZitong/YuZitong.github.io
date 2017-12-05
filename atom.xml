@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Oltremare</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yuzt1224.name/"/>
+  <updated>2017-12-05T08:23:27.156Z</updated>
+  <id>http://yuzt1224.name/</id>
+  
+  <author>
+    <name>Yu Zitong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习整理</title>
+    <link href="http://yuzt1224.name/2017/12/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/"/>
+    <id>http://yuzt1224.name/2017/12/05/机器学习整理/</id>
+    <published>2017-12-05T07:47:05.000Z</published>
+    <updated>2017-12-05T08:23:27.156Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img src=&quot;/images/SVM.png&quot;&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;关于本文&quot;&gt;&lt;a href=&quot;#关于本文&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="http://yuzt1224.name/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="笔记" scheme="http://yuzt1224.name/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过Hexo+Github部署个人博客</title>
+    <link href="http://yuzt1224.name/2017/12/05/%E9%80%9A%E8%BF%87Hexo+Github%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yuzt1224.name/2017/12/05/通过Hexo+Github部署个人博客/</id>
+    <published>2017-12-04T19:15:28.663Z</published>
+    <updated>2017-12-04T19:15:28.663Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a href=&quot;http://carryguan.me/2016/07/02/hexo-gihubpages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yuzt1224.name/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
