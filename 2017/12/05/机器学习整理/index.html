@@ -88,20 +88,23 @@
 
 
 
-<meta name="description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将借鉴Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而">
+<meta name="description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将转述Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而">
 <meta name="keywords" content="机器学习,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习整理">
 <meta property="og:url" content="http://yuzt1224.name/2017/12/05/机器学习整理/index.html">
 <meta property="og:site_name" content="Oltremare">
-<meta property="og:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将借鉴Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
+<meta property="og:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将转述Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yuzt1224.name/images/SVM.png">
 <meta property="og:image" content="http://yuzt1224.name/images/mango.png">
-<meta property="og:updated_time" content="2017-12-06T13:06:30.162Z">
+<meta property="og:image" content="http://yuzt1224.name/images/time-score.png">
+<meta property="og:image" content="http://yuzt1224.name/images/fit.png">
+<meta property="og:image" content="http://yuzt1224.name/images/human-machinelearning.png">
+<meta property="og:updated_time" content="2017-12-08T03:54:48.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习整理">
-<meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将借鉴Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
+<meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将转述Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
 <meta name="twitter:image" content="http://yuzt1224.name/images/SVM.png">
 
 
@@ -302,7 +305,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-08T11:54:48+08:00">
+                2017-12-08
+              </time>
             
           </span>
 
@@ -360,7 +375,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  913
+                  1,847
                 </span>
               
 
@@ -376,7 +391,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -401,7 +416,7 @@
 <hr>
 <h2 id="关于本文"><a href="#关于本文" class="headerlink" title="关于本文"></a>关于本文</h2><p>这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。</p>
 <hr>
-<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><h3 id="说明机器学习的小故事"><a href="#说明机器学习的小故事" class="headerlink" title="说明机器学习的小故事"></a>说明机器学习的小故事</h3><p>下面将借鉴<a href="https://www.quora.com/profile/Pararth-Shah" target="_blank" rel="noopener">Pararth Shah</a>在2012年12月22日的使用的<a href="https://www.quora.com/How-do-you-explain-Machine-Learning-and-Data-Mining-to-non-Computer-Science-people/answer/Pararth-Shah?srid=3dyPN" target="_blank" rel="noopener">例子</a>，通过用一个小故事形象地说明什么是机器学习。</p>
+<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><h3 id="说明机器学习的小故事"><a href="#说明机器学习的小故事" class="headerlink" title="说明机器学习的小故事"></a>说明机器学习的小故事</h3><p>下面将转述<a href="https://www.quora.com/profile/Pararth-Shah" target="_blank" rel="noopener">Pararth Shah</a>在2012年12月22日的使用的<a href="https://www.quora.com/How-do-you-explain-Machine-Learning-and-Data-Mining-to-non-Computer-Science-people/answer/Pararth-Shah?srid=3dyPN" target="_blank" rel="noopener">例子</a>，通过用一个小故事形象地说明什么是机器学习。</p>
 <p><strong>买芒果</strong></p>
 <p>有一天喻资通到水果摊买<em>芒果</em>。当然喻资通买<em>芒果</em>是用手选的，而且<em>芒果</em>小贩是按斤卖<em>芒果</em>的。因为他喜欢吃甜的，所以决定选 <strong>甜</strong> 的。</p>
 <p>外婆告诉他， <strong>亮黄色</strong> 的<em>芒果</em>比 <strong>淡黄色</strong> 的甜。于是他就按照外婆传授的经验买回一袋<em>芒果</em>来，尝了之后发现只有一部分<em>芒果</em>甜。细心的他发现，又 <strong>大</strong> 又 <strong>亮黄</strong> 的<em>芒果</em>甜的概率是又 <strong>小</strong> 又 <strong>亮黄</strong> 概率的两倍。于是他决定下次用这个经验买<em>芒果</em>。</p>
@@ -413,9 +428,38 @@
 <img src="/images/mango.png" title="作者也不知道这是什么水果 就当作芒果吧">
 <p>但是每次从实验中进行新的观察时（挑选、试吃<em>芒果</em>），都必须手动修改规则列表。你必须了解影响<em>芒果</em>品质所有因素的错综复杂的细节。如果这个问题变得足够复杂，那么人工确定所有芒果好坏的精确规则就很困难了。你的研究可以让你获得芒果科学博士学位（如果有的话）。但不是每个人都有这样的时间。</p>
 <p>幸好喻资通是学计算机的。他决定用代码来说建立选芒果的模型。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ( color is bright yellow <span class="keyword">and</span> size is big ): mango is sweet.</span><br><span class="line"><span class="keyword">if</span> ( feel is soft): mango is juicy.</span><br><span class="line">etc.</span><br></pre></td></tr></table></figure><br>把这些建立模型的过程交给电脑，比如把所有的自变量和因变量输入，然后让计算机帮喻资通生成一个模型，同时让计算机根据当前遇到的芒果特征，给出芒果是否符合要求的建议。那么计算机执行这些辅助决策的过程就是机器学习的过程。</p>
-<p><strong>机器学习方法是计算机利用已有的数据(经验)，得出了某种模型(芒果好不好的规律)，并利用此模型预测未来(芒果是否好)的一种方法。</strong></p>
-<p>下面将会对机器学习的正式介绍，包括定义、范围，方法、应用等等。</p>
-<h3 id="机器学习的定义"><a href="#机器学习的定义" class="headerlink" title="机器学习的定义"></a>机器学习的定义</h3><p>To be continued…</p>
+<p><strong>机器学习方法是计算机利用已有的数据(经验)，得出了某种模型(芒果好不好的规律)，并利用此模型预测未来(芒果符不符合要求)的一种方法。</strong></p>
+<h3 id="机器学习的定义"><a href="#机器学习的定义" class="headerlink" title="机器学习的定义"></a>机器学习的定义</h3><p>在实践中，机器学习是一种利用历史数据，训练出模型，来进行预测的一种方法。</p>
+<p>拿准备考试的时间和最终考试成绩举一个例子：</p>
+<img src="/images/time-score.png" title="准备时间和考试成绩关系图">
+<p>明天有一场考试，你的室友已经复习得有一段时间了。你闲来无事想估计一下明天他能考多少分。根据以往的经验，你室友复习准备的时间和最终考试成绩的情况如上图所示。找到之间的规律很简单，拟合出一条直线，让它“穿过”所有的点，并且与各个点的距离尽可能的小。</p>
+<p>于是你获得了一个能反映复习时间和考试成绩的规律：</p>
+<p>$$ 考试分数 =\begin{cases}3.2 \times 时间 + 66,&amp;\text{如果$时间 \le 10 天$}\\100,&amp;\text{如果$时间 \gt 10 天$}\end{cases}$$</p>
+<p>反映在图上就是：</p>
+<img src="/images/fit.png" title="准备时间和考试成绩关系拟合图">
+<p>你的室友已经复习了7天了，则预测的分数就是$3.2\times7+66=76.2分$。为什么出现了$.2$这个小数呢？由于这条直线综合考虑了大部分的情况，因此从统计意义上来说，这是一个最合理的预测。</p>
+<p>在得出模型的过程中我们可以发现：</p>
+<ul>
+<li>模型是根据拟合函数的类型决定的。比如说现在用的是直线，那拟合出的模型就是直线方程；如果是抛物线，那么拟合出的模型就是抛物线方程。一些强算法可以拟合出非常复杂的非线性模型，来反映一些直线不能表达的情况。</li>
+<li>随着数据量的增加，模型就能够被更多情况所训练，对新情况的预测可能就更好。<blockquote><p>It’s not who has the best algorithm that wins. It’s who has the most data.</p>
+</blockquote>
+</li>
+</ul>
+<p>在拟合直线的过程中，我们可以对机器学习过程做一个完整的回顾。首先，我们需要在计算机中存储历史的数据。接着，我们将这些数据通过机器学习算法进行处理。这个过程在机器学习中叫做<strong>训练</strong>。处理的结果可以被我们用来对新的数据进行预测，这个结果一般称之为<strong>模型</strong>。对新数据的预测过程在机器学习中叫做<strong>预测</strong>。<strong>训练</strong>与<strong>预测</strong>是机器学习的两个过程，<strong>模型</strong>则是过程的中间输出结果，<strong>训练</strong>产生<strong>模型</strong>，<strong>模型</strong>指导<strong>预测</strong>。</p>
+<p>引用一个图，把机器学习的过程与人类对历史经验归纳的过程做个比对：</p>
+<img src="/images/human-machinelearning.png" title="机器学习与人类经验归纳">
+<p>人类在成长、生活过程中积累了很多的历史与经验。人类定期地对这些经验进行<strong>归纳</strong>，获得了生活的<strong>规律</strong>。当人类遇到未知的问题或者需要对未来进行<strong>推测</strong>的时候，人类使用这些<strong>规律</strong>，对未知问题与未来进行<strong>推测</strong>，从而指导自己的生活和工作。</p>
+<p>机器学习中的<strong>训练</strong>与<strong>预测</strong>过程可以对应到人类的<strong>归纳</strong>和<strong>推测</strong>过程。通过这样的对应，我们可以发现机器学习的思想并不复杂，仅仅是对人类在生活中学习成长的一个模拟。由于机器学习不是基于编程形成的结果，因此它的处理过程不是因果的逻辑，而是通过归纳思想得出的相关性结论。</p>
+<p>以上是对机器学习是什么做的简单讲述。</p>
+<h2 id="机器学习的方法"><a href="#机器学习的方法" class="headerlink" title="机器学习的方法"></a>机器学习的方法</h2><h3 id="监督学习-supervised-study"><a href="#监督学习-supervised-study" class="headerlink" title="监督学习(supervised study)"></a>监督学习(supervised study)</h3><ol>
+<li>回归算法</li>
+<li>神经网络</li>
+<li>SVM(Support Vector Machines)支持向量机<h3 id="无监督学习-unsupervised-study"><a href="#无监督学习-unsupervised-study" class="headerlink" title="无监督学习(unsupervised study)"></a>无监督学习(unsupervised study)</h3></li>
+<li>聚类算法</li>
+<li>降维算法<h3 id="特殊算法"><a href="#特殊算法" class="headerlink" title="特殊算法"></a>特殊算法</h3></li>
+<li>推荐算法</li>
+</ol>
+<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><p>##总结</p>
 
       
     </div>
@@ -662,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">2.</span> <span class="nav-text">什么是机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明机器学习的小故事"><span class="nav-number">2.1.</span> <span class="nav-text">说明机器学习的小故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.2.</span> <span class="nav-text">机器学习的定义</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">2.</span> <span class="nav-text">什么是机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明机器学习的小故事"><span class="nav-number">2.1.</span> <span class="nav-text">说明机器学习的小故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.2.</span> <span class="nav-text">机器学习的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的方法"><span class="nav-number">3.</span> <span class="nav-text">机器学习的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#监督学习-supervised-study"><span class="nav-number">3.1.</span> <span class="nav-text">监督学习(supervised study)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无监督学习-unsupervised-study"><span class="nav-number">3.2.</span> <span class="nav-text">无监督学习(unsupervised study)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊算法"><span class="nav-number">3.3.</span> <span class="nav-text">特殊算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度学习"><span class="nav-number">4.</span> <span class="nav-text">深度学习</span></a></li></ol></div>
             
 
           </div>
@@ -899,6 +943,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
