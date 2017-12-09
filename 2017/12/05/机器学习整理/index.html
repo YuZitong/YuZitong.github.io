@@ -101,7 +101,9 @@
 <meta property="og:image" content="http://yuzt1224.name/images/time-score.png">
 <meta property="og:image" content="http://yuzt1224.name/images/fit.png">
 <meta property="og:image" content="http://yuzt1224.name/images/human-machinelearning.png">
-<meta property="og:updated_time" content="2017-12-08T09:06:16.106Z">
+<meta property="og:image" content="http://yuzt1224.name/images/regression.png">
+<meta property="og:image" content="http://yuzt1224.name/images/classification.png">
+<meta property="og:updated_time" content="2017-12-08T10:02:09.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习整理">
 <meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将转述Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
@@ -315,7 +317,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-08T17:06:16+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-08T18:02:09+08:00">
                 2017-12-08
               </time>
             
@@ -375,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,881
+                  2,327
                 </span>
               
 
@@ -391,7 +393,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -452,8 +454,16 @@
 <p>机器学习中的<strong>训练</strong>与<strong>预测</strong>过程可以对应到人类的<strong>归纳</strong>和<strong>推测</strong>过程。通过这样的对应，我们可以发现机器学习的思想并不复杂，仅仅是对人类在生活中学习成长的一个模拟。由于机器学习不是基于编程形成的结果，因此它的处理过程不是因果的逻辑，而是通过归纳思想得出的相关性结论。</p>
 <p>以上是对机器学习是什么做的简单讲述。</p>
 <h2 id="机器学习的方法"><a href="#机器学习的方法" class="headerlink" title="机器学习的方法"></a>机器学习的方法</h2><h3 id="监督学习-supervised-study"><a href="#监督学习-supervised-study" class="headerlink" title="监督学习(supervised study)"></a>监督学习(supervised study)</h3><ol>
-<li>回归算法</li>
-<li>神经网络</li>
+<li><p>回归算法<br>回归算法有两个子类，将分别介绍。</p>
+<ul>
+<li>线性回归<br>线性回归就像之前提到的预测考试分数的例子一样，拟合一条方程来最佳匹配找到的所有数据。最先想到的方法是<strong>最小二乘法</strong>。它的思想是：使所有预测值和实际值之间的误差平方和最小，这样最优问题转化成了求函数极值问题。求函数极值最先想到的是求导数为0，但是这样的方法可能计算量偏大，可能无解，也有可能不适合计算机。<img src="/images/regression.png" title="Regression">
+为了解决这个问题，需要用到<strong>数值计算</strong>方面的知识。数值计算是专门用来提升计算机进行各类计算时的准确性和效率的学科。如<strong>梯度下降法</strong>，它是解决回归模型中最简单有效的方法之一。这里将会有一篇专门的文章来介绍它。</li>
+<li>逻辑回归<br>逻辑回归和线性回归解决的问题类型上不同。线性回归最后得出的结果是数字，是连续值；逻辑回归最后得出的结果是分类，是离散值。例如在之前预测考试分数的例子中，假设低于60分就是挂科，最后让你预测你的室友挂没挂科。结果只有两类：挂科和不挂科（虽然之前的数据显示，无论复习多短时间，你的室友怎么也不会挂科。看来他是学霸）。<img src="/images/classification.png" title="Classification">
+那么怎么实现逻辑回归呢？逻辑回归实际上是对线性回归的结果加上了<a href="https://en.wikipedia.org/wiki/Sigmoid_function#Examples" target="_blank" rel="noopener">Sigmoid函数</a>，将线性回归的数值转化到了0到1之间的概率。</li>
+</ul>
+</li>
+<li><p>神经网络</p>
+</li>
 <li>SVM(Support Vector Machines)支持向量机</li>
 </ol>
 <h3 id="无监督学习-unsupervised-study"><a href="#无监督学习-unsupervised-study" class="headerlink" title="无监督学习(unsupervised study)"></a>无监督学习(unsupervised study)</h3><ol>
