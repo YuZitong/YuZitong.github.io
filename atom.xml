@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yuzt1224.name/"/>
-  <updated>2017-12-11T15:33:39.217Z</updated>
+  <updated>2017-12-11T17:19:36.922Z</updated>
   <id>http://yuzt1224.name/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>《Coco》关于死亡、遗忘和被遗忘</title>
-    <link href="http://yuzt1224.name/2017/12/12/%E3%80%8ACoco%E3%80%8B%E5%85%B3%E4%BA%8E%E6%AD%BB%E4%BA%A1%E3%80%81%E9%81%97%E5%BF%98%E5%92%8C%E8%A2%AB%E9%81%97%E5%BF%98/"/>
-    <id>http://yuzt1224.name/2017/12/12/《Coco》关于死亡、遗忘和被遗忘/</id>
-    <published>2017-12-11T19:28:58.000Z</published>
-    <updated>2017-12-11T15:33:39.217Z</updated>
+    <title>支持向量机的数学原理</title>
+    <link href="http://yuzt1224.name/2017/12/12/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA%E7%9A%84%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86/"/>
+    <id>http://yuzt1224.name/2017/12/12/支持向量机的数学原理/</id>
+    <published>2017-12-11T23:41:03.000Z</published>
+    <updated>2017-12-11T17:19:36.922Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,31 @@
       
         
         
-          &lt;p&gt;上星期五看的《寻梦环游记》应该是近期以来遇到的最不错的 也是至今唯一能让我在电影院感受到泪点的电影 想有个记录 于是就有了这篇东西&lt;/p&gt;
-&lt;p&gt;去电影院之前我没有看任何剧透 甚至没有看任何它的海报 去看这部电影完全是因为有人提起它 说是很不错的电影
+          &lt;p&gt;待更
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《Coco》关于死亡、遗忘和被遗忘</title>
+    <link href="http://yuzt1224.name/2017/12/12/%E3%80%8ACoco%E3%80%8B%E5%85%B3%E4%BA%8E%E6%AD%BB%E4%BA%A1%E3%80%81%E9%81%97%E5%BF%98%E5%92%8C%E8%A2%AB%E9%81%97%E5%BF%98/"/>
+    <id>http://yuzt1224.name/2017/12/12/《Coco》关于死亡、遗忘和被遗忘/</id>
+    <published>2017-12-11T19:28:58.000Z</published>
+    <updated>2017-12-11T17:16:44.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img src=&quot;/images/coco.jpg&quot;&gt;
+&lt;p&gt;上星期五看的《寻梦环游记》应该是近期以来遇到的最不错的 也是至今唯一能让我在电影院感受到泪点的电影 想有个记录 于是就有了这篇东西&lt;/p&gt;
+&lt;p&gt;去电影院之前我没有看任何剧透 甚至没有看任何它的海报
         
       
     
@@ -70,30 +93,6 @@
       <category term="机器学习" scheme="http://yuzt1224.name/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="笔记" scheme="http://yuzt1224.name/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过Hexo+Github部署个人博客</title>
-    <link href="http://yuzt1224.name/2017/12/05/%E9%80%9A%E8%BF%87Hexo+Github%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yuzt1224.name/2017/12/05/通过Hexo+Github部署个人博客/</id>
-    <published>2017-12-04T19:15:28.663Z</published>
-    <updated>2017-12-04T19:15:28.663Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a href=&quot;http://carryguan.me/2016/07/02/hexo-gihubpages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yuzt1224.name/tags/hexo/"/>
     
   </entry>
   
