@@ -103,7 +103,9 @@
 <meta property="og:image" content="http://yuzt1224.name/images/human-machinelearning.png">
 <meta property="og:image" content="http://yuzt1224.name/images/regression.png">
 <meta property="og:image" content="http://yuzt1224.name/images/classification.png">
-<meta property="og:updated_time" content="2017-12-11T17:34:16.836Z">
+<meta property="og:image" content="http://yuzt1224.name/images/ann_module.png">
+<meta property="og:image" content="http://yuzt1224.name/images/SVM.png">
+<meta property="og:updated_time" content="2017-12-21T09:01:58.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习整理">
 <meta name="twitter:description" content="关于本文这里记录了在学习机器学习和与之相关的知识途中得到的心得、见解和有趣的应用。它将会不定期更新。  什么是机器学习说明机器学习的小故事下面将转述Pararth Shah在2012年12月22日的使用的例子，通过用一个小故事形象地说明什么是机器学习。 买芒果 有一天喻资通到水果摊买芒果。当然喻资通买芒果是用手选的，而且芒果小贩是按斤卖芒果的。因为他喜欢吃甜的，所以决定选 甜 的。 外婆告诉他">
@@ -317,8 +319,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-12T01:34:16+08:00">
-                2017-12-11
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-21T17:01:58+08:00">
+                2017-12-21
               </time>
             
           </span>
@@ -377,7 +379,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,324
+                  3,250
                 </span>
               
 
@@ -393,7 +395,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  11
                 </span>
               
             </div>
@@ -454,28 +456,31 @@
 <p>机器学习中的<strong>训练</strong>与<strong>预测</strong>过程可以对应到人类的<strong>归纳</strong>和<strong>推测</strong>过程。通过这样的对应，我们可以发现机器学习的思想并不复杂，仅仅是对人类在生活中学习成长的一个模拟。由于机器学习不是基于编程形成的结果，因此它的处理过程不是因果的逻辑，而是通过归纳思想得出的相关性结论。</p>
 <p>以上是对机器学习是什么做的简单讲述。</p>
 <h2 id="机器学习的方法"><a href="#机器学习的方法" class="headerlink" title="机器学习的方法"></a>机器学习的方法</h2><h3 id="监督学习-supervised-study"><a href="#监督学习-supervised-study" class="headerlink" title="监督学习(supervised study)"></a>监督学习(supervised study)</h3><ol>
-<li><p>回归算法<br>回归算法有两个子类，将分别介绍。</p>
+<li><p>回归算法<br>回归算法有两个子类。</p>
 <ul>
 <li>线性回归<br>线性回归就像之前提到的预测考试分数的例子一样，拟合一条方程来最佳匹配找到的所有数据。最先想到的方法是<strong>最小二乘法</strong>。它的思想是：使所有预测值和实际值之间的误差平方和最小，这样最优问题转化成了求函数极值问题。求函数极值最先想到的是求导数为0，但是这样的方法可能计算量偏大，可能无解，也有可能不适合计算机。<img src="/images/regression.png" title="Regression">
-为了解决这个问题，需要用到<strong>数值计算</strong>方面的知识。数值计算是专门用来提升计算机进行各类计算时的准确性和效率的学科。如<strong>梯度下降法</strong>，它是解决回归模型中最简单有效的方法之一。这里将会有一篇专门的文章来介绍它。</li>
+为了解决这个问题，需要用到<strong>数值计算</strong>方面的知识。数值计算是专门用来提升计算机进行各类计算时的准确性和效率的学科。如<strong>梯度下降法</strong>，它是解决回归模型中最简单有效的方法之一。将会有一篇专门的文章来说它。</li>
 <li>逻辑回归<br>逻辑回归和线性回归解决的问题类型上不同。线性回归最后得出的结果是数字，是连续值；逻辑回归最后得出的结果是分类，是离散值。例如在之前预测考试分数的例子中，假设低于60分就是挂科，最后让你预测你的室友挂没挂科。结果只有两类：挂科和不挂科（虽然之前的数据显示，无论复习多短时间，你的室友怎么也不会挂科。看来他是学霸）。<img src="/images/classification.png" title="Classification">
-那么怎么实现逻辑回归呢？逻辑回归实际上是对线性回归的结果加上了<a href="https://en.wikipedia.org/wiki/Sigmoid_function#Examples" target="_blank" rel="noopener">Sigmoid函数</a>，将线性回归的数值转化到了0到1之间的概率。</li>
+那么怎么实现逻辑回归呢？逻辑回归实际上是对线性回归的结果加上了<a href="https://en.wikipedia.org/wiki/Sigmoid_function#Examples" target="_blank" rel="noopener">Sigmoid函数</a>，将线性回归的数值转化到了0到1之间的概率，接着我们根据这个概率可以做预测。例如某一类别的概率大于0.5，就判断输入数据属于该类别。<br>逻辑回归算法所做的分类都是线性的(也有非线性分类线的逻辑回归，不过在处理数据量较大的时候效率会很低)。当两类之间的界线不是线性时，逻辑回归的表达能力就不足了。下面的两个算法是机器学习界最强大且重要的算法，都可以实行非线性的分类。</li>
 </ul>
 </li>
-<li><p>神经网络</p>
+<li><p>神经网络<br>神经网络(ANN)算法是80年代机器学习界非常流行的算法，不过在之后中途衰落。现在由于计算能力的提升和BP算法的提出，神经网络再次流行，重新成为最强大的机器学习算法之一。<br>下面是一个简单的神经网络的逻辑架构。在这个网络中，分成输入层，隐藏层，和输出层。输入层负责接收信号，隐藏层负责对数据的分解与处理，最后的结果被整合到输出层。每层中的一个圆代表一个处理单元，可以认为是模拟了一个神经元，若干个处理单元组成了一个层，若干个层再组成了一个网络，也就是”神经网络”。</p>
+<img src="/images/ann_module.png" title="神经网络的逻辑架构">
+<p>在神经网络中，每个处理单元事实上就是一个逻辑回归模型，逻辑回归模型接收上层的输入，把模型的预测结果作为输出传输到下一个层次。通过这样的过程，神经网络可以完成非常复杂的非线性分类。<br>在另一篇文章里会详细总结神经网络的不同模型、现有框架，并且上传MNIST的代码。MNIST是一个简单的用于识别手写数字的神经网络应用。</p>
 </li>
-<li>SVM(Support Vector Machines)支持向量机</li>
+<li><p>SVM(Support Vector Machines)支持向量机<br>支持向量机（Support Vector Machine，简称SVM）是喻资通最喜爱的一种分类器之一，必须得新开一章来讲！见《支持向量机的数学原理》。</p>
+<img src="/images/SVM.png" title="支持向量机">
+</li>
 </ol>
-<h3 id="无监督学习-unsupervised-study"><a href="#无监督学习-unsupervised-study" class="headerlink" title="无监督学习(unsupervised study)"></a>无监督学习(unsupervised study)</h3><ol>
-<li>聚类算法</li>
-<li>降维算法</li>
+<h3 id="无监督学习-unsupervised-study"><a href="#无监督学习-unsupervised-study" class="headerlink" title="无监督学习(unsupervised study)"></a>无监督学习(unsupervised study)</h3><p>前面的算法中的训练数据都包含了标签，标签是指数据的结果（考试分数、挂不挂科），训练出的模型可以对其他未知数据预测标签。在下面的算法中，训练数据都是不含标签的，而算法的目的则是通过训练，推测出这些数据的标签。这类算法有一个统称，即无监督算法。</p>
+<ol>
+<li>聚类算法<br>某一个数据包含多个特征，希望通过聚类算法，给他们中不同的种类打上标签。聚类算法中最典型的代表就是<a href="">K-Means算法</a>。</li>
+<li>降维算法<br>降维算法的主要作用是压缩数据与提升机器学习其他算法的效率。通过降维算法，可以将具有几千个特征的数据压缩至若干个特征，这个降维的过程可以通过数学证明它最大程度地保留了数据的信息。降维算法的主要代表是<a href="">PCA算法(主成分分析算法)</a>。</li>
 </ol>
-<h3 id="特殊算法"><a href="#特殊算法" class="headerlink" title="特殊算法"></a>特殊算法</h3><ol>
-<li>推荐算法</li>
-</ol>
-<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><p>深度学习的理念就是传统神经网络里加入了多层隐藏层。多隐层的神经网络具有优异的特征学习能力，学习得到的特征对数据有更本质的刻画，从而有利于可视化或分类。深度神经网络在训练上的难度，可以通过“逐层初始化” 来有效克服。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文先说了机器学习的定义，然后是机器学习的方法，最后给深度学习开了个头。其中SVM、K-Means算法、PCA算法、深度学习会在之后总结。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
 <li><a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="noopener">Andrew Ng Courera Machine Learning</a></li>
-<li><a href="http://blog.pluskid.org/?page_id=683" target="_blank" rel="noopener">pluskid SVM</a></li>
 <li><a href="http://www.cnblogs.com/subconscious/p/4107357.html" target="_blank" rel="noopener">计算机的潜意识 从机器学习谈起</a></li>
 <li><a href="https://www.quora.com/How-do-you-explain-Machine-Learning-and-Data-Mining-to-non-Computer-Science-people/answer/Pararth-Shah?srid=3dyPN" target="_blank" rel="noopener">Pararth Shah’s answer Quora</a></li>
 </ol>
@@ -723,7 +728,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">2.</span> <span class="nav-text">什么是机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明机器学习的小故事"><span class="nav-number">2.1.</span> <span class="nav-text">说明机器学习的小故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.2.</span> <span class="nav-text">机器学习的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的方法"><span class="nav-number">3.</span> <span class="nav-text">机器学习的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#监督学习-supervised-study"><span class="nav-number">3.1.</span> <span class="nav-text">监督学习(supervised study)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无监督学习-unsupervised-study"><span class="nav-number">3.2.</span> <span class="nav-text">无监督学习(unsupervised study)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊算法"><span class="nav-number">3.3.</span> <span class="nav-text">特殊算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度学习"><span class="nav-number">4.</span> <span class="nav-text">深度学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本文"><span class="nav-number">1.</span> <span class="nav-text">关于本文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">2.</span> <span class="nav-text">什么是机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明机器学习的小故事"><span class="nav-number">2.1.</span> <span class="nav-text">说明机器学习的小故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.2.</span> <span class="nav-text">机器学习的定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的方法"><span class="nav-number">3.</span> <span class="nav-text">机器学习的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#监督学习-supervised-study"><span class="nav-number">3.1.</span> <span class="nav-text">监督学习(supervised study)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无监督学习-unsupervised-study"><span class="nav-number">3.2.</span> <span class="nav-text">无监督学习(unsupervised study)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度学习"><span class="nav-number">4.</span> <span class="nav-text">深度学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
