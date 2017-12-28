@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yuzt1224.name/"/>
-  <updated>2017-12-26T18:01:34.000Z</updated>
+  <updated>2017-12-28T13:06:17.429Z</updated>
   <id>http://yuzt1224.name/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在学TensorFlow途中惊觉的Keras</title>
+    <link href="http://yuzt1224.name/2017/12/29/%E5%9C%A8%E5%AD%A6TensorFlow%E9%80%94%E4%B8%AD%E6%83%8A%E8%A7%89%E7%9A%84Keras/"/>
+    <id>http://yuzt1224.name/2017/12/29/在学TensorFlow途中惊觉的Keras/</id>
+    <published>2017-12-28T21:02:17.000Z</published>
+    <updated>2017-12-28T13:06:17.429Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;待更
+        
+      
+    
+    </summary>
+    
+      <category term="机器学习" scheme="http://yuzt1224.name/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="框架" scheme="http://yuzt1224.name/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="机器学习框架" scheme="http://yuzt1224.name/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>22岁</title>
