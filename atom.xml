@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yuzt1224.name/"/>
-  <updated>2017-12-29T03:37:51.000Z</updated>
+  <updated>2018-01-10T18:42:52.257Z</updated>
   <id>http://yuzt1224.name/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信跳一跳外挂</title>
+    <link href="http://yuzt1224.name/2018/01/11/%E5%BE%AE%E4%BF%A1%E8%B7%B3%E4%B8%80%E8%B7%B3%E5%A4%96%E6%8C%82/"/>
+    <id>http://yuzt1224.name/2018/01/11/微信跳一跳外挂/</id>
+    <published>2018-01-11T00:08:48.000Z</published>
+    <updated>2018-01-10T18:42:52.257Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;微信跳一跳外挂实现&quot;&gt;&lt;a href=&quot;#微信跳一跳外挂实现&quot; class=&quot;headerlink&quot; title=&quot;微信跳一跳外挂实现&quot;&gt;&lt;/a&gt;微信跳一跳外挂实现&lt;/h1&gt;&lt;h2 id=&quot;实现原理&quot;&gt;&lt;a href=&quot;#实现原理&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="野生技术" scheme="http://yuzt1224.name/categories/%E9%87%8E%E7%94%9F%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="python" scheme="http://yuzt1224.name/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>在学TensorFlow途中惊觉的Keras</title>
