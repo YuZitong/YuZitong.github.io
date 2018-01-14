@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yuzt1224.name/"/>
-  <updated>2018-01-12T04:34:35.100Z</updated>
+  <updated>2018-01-14T06:51:23.450Z</updated>
   <id>http://yuzt1224.name/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 命令</title>
+    <link href="http://yuzt1224.name/2018/01/14/Git-%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yuzt1224.name/2018/01/14/Git-命令/</id>
+    <published>2018-01-14T06:19:01.000Z</published>
+    <updated>2018-01-14T06:51:23.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;速查表&quot;&gt;&lt;a href=&quot;#速查表&quot; class=&quot;headerlink&quot; title=&quot;速查表&quot;&gt;&lt;/a&gt;速查表&lt;/h1&gt;&lt;img src=&quot;/images/git_command.jpeg&quot;&gt;
+&lt;h1 id=&quot;一般流程&quot;&gt;&lt;a href=&quot;#一般流程&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="野生技术" scheme="http://yuzt1224.name/categories/%E9%87%8E%E7%94%9F%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="git" scheme="http://yuzt1224.name/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>微信跳一跳外挂</title>
